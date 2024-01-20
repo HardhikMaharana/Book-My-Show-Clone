@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BookMyEventDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BME_tblAdminDetails">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdminName" Type="varchar" MaxLength="250" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="MailId" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="UpdatedOn" Type="datetime2" Precision="7" />
+  </EntityType>
+  <EntityType Name="BME_tblBookingDetailsDb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="250" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="PropertyName" Type="varchar" MaxLength="250" />
+    <Property Name="PropertyId" Type="int" />
+    <Property Name="PropertyAddress" Type="varchar" MaxLength="250" />
+    <Property Name="DateTime" Type="datetime2" Precision="7" />
+    <Property Name="Location" Type="varchar" MaxLength="250" />
+    <Property Name="EventName" Type="varchar" MaxLength="250" />
+    <Property Name="EventId" Type="int" />
+    <Property Name="NumberOfSeats" Type="int" />
+    <Property Name="SeatsNumber" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="BME_tblEventDb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EventName" Type="varchar" MaxLength="250" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="EventType" Type="varchar" MaxLength="50" />
+    <Property Name="Duration" Type="varchar" MaxLength="50" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Language" Type="varchar" MaxLength="50" />
+    <Property Name="CasteName" Type="varchar" MaxLength="250" />
+    <Property Name="Image" Type="varbinary(max)" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="UpdatedOn" Type="datetime2" Precision="7" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="BME_tblPropertyDb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PropertyName" Type="varchar" MaxLength="250" />
+    <Property Name="PropertyLocation" Type="varchar" MaxLength="250" />
+    <Property Name="CurrentEvent_Id" Type="int" Nullable="false" />
+    <Property Name="PropertyAddress" Type="varchar" MaxLength="250" />
+    <Property Name="Price" Type="varchar" MaxLength="50" />
+    <Property Name="NoOfSeats" Type="varchar" MaxLength="50" />
+    <Property Name="NoOfSeatsBooked" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="SeatNumber" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Time" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="250" />
+    <Property Name="UpdatedOn" Type="datetime2" Precision="7" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="BME_tblUserDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="PhoneNo" Type="varchar" MaxLength="10" />
+    <Property Name="Role" Type="varchar" MaxLength="50" />
+    <Property Name="MailId" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime2" Precision="7" />
+    <Property Name="UpdatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="UpdatedOn" Type="datetime2" Precision="7" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="BookMyEventDbModelStoreContainer">
+    <EntitySet Name="BME_tblAdminDetails" EntityType="Self.BME_tblAdminDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BME_tblBookingDetailsDb" EntityType="Self.BME_tblBookingDetailsDb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BME_tblEventDb" EntityType="Self.BME_tblEventDb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BME_tblPropertyDb" EntityType="Self.BME_tblPropertyDb" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BME_tblUserDetails" EntityType="Self.BME_tblUserDetails" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

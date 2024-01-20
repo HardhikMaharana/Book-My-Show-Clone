@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BookMyEventDbModelStoreContainer" CdmEntityContainer="BookMyEventDbEntities">
+    <EntitySetMapping Name="BME_tblUserDetails">
+      <EntityTypeMapping TypeName="BookMyEventDbModel.BME_tblUserDetails">
+        <MappingFragment StoreEntitySet="BME_tblUserDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="MailId" ColumnName="MailId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BME_tblAdminDetails">
+      <EntityTypeMapping TypeName="BookMyEventDbModel.BME_tblAdminDetails">
+        <MappingFragment StoreEntitySet="BME_tblAdminDetails">
+          <ScalarProperty Name="MailId" ColumnName="MailId" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="AdminName" ColumnName="AdminName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BME_tblEventDb">
+      <EntityTypeMapping TypeName="BookMyEventDbModel.BME_tblEventDb">
+        <MappingFragment StoreEntitySet="BME_tblEventDb">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="CasteName" ColumnName="CasteName" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BME_tblPropertyDb">
+      <EntityTypeMapping TypeName="BookMyEventDbModel.BME_tblPropertyDb">
+        <MappingFragment StoreEntitySet="BME_tblPropertyDb">
+          <ScalarProperty Name="SeatNumber" ColumnName="SeatNumber" />
+          <ScalarProperty Name="NoOfSeatsBooked" ColumnName="NoOfSeatsBooked" />
+          <ScalarProperty Name="CurrentEvent_Id" ColumnName="CurrentEvent_Id" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="NoOfSeats" ColumnName="NoOfSeats" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="PropertyAddress" ColumnName="PropertyAddress" />
+          <ScalarProperty Name="PropertyLocation" ColumnName="PropertyLocation" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BME_tblBookingDetailsDb">
+      <EntityTypeMapping TypeName="BookMyEventDbModel.BME_tblBookingDetailsDb">
+        <MappingFragment StoreEntitySet="BME_tblBookingDetailsDb">
+          <ScalarProperty Name="SeatsNumber" ColumnName="SeatsNumber" />
+          <ScalarProperty Name="NumberOfSeats" ColumnName="NumberOfSeats" />
+          <ScalarProperty Name="PropertyAddress" ColumnName="PropertyAddress" />
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+          <ScalarProperty Name="PropertyId" ColumnName="PropertyId" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="EventName" ColumnName="EventName" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
